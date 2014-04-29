@@ -1,0 +1,7 @@
+sudo debconf-set-selections <<< postfix	postfix/main_mailer_type select Internet Site;
+sudo debconf-set-selections <<< postfix postfix/mailname string monitor.lojavirtualdevops.com.br;
+sudo debconf-set-selections <<< nagios3-cgi	nagios3/nagios1-in-apacheconf boolean false;
+sudo debconf-set-selections <<< nagios3-cgi	nagios3/adminpassword-mismatch note;
+sudo debconf-set-selections <<< nagios3-cgi	nagios3/httpd multiselect apache2;
+sudo debconf-set-selections <<< nagios3-cgi nagios3/adminpassword password nagiosadmin;
+sudo debconf-set-selections <<< nagios3-cgi nagios3/adminpassword-repeat password nagiosadmin;

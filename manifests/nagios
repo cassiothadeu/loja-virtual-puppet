@@ -1,0 +1,3 @@
+Package: nagios*
+Pin: release n=raring
+Pin-Priority: 990
